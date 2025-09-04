@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to TAANVAS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/main.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="py-4 px-6 bg-blue-950 text-white">
+      <div class="container mx-1 px-1">
+          <h1 class="text-4xl text-white font-bold mb-8">TAANVAS</h1>
+      </div>
+    <div class="relative inline-block text-left">
+      <!-- Dropdown button -->
+      <button type="button" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-600" id="dropdown-menu" aria-haspopup="true" aria-expanded="true">
+        <span id="selected-option">Select User Type</span>
+        <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+
+      <!-- Dropdown menu -->
+      <div class="absolute right-0 mt-2 w-40 bg-white border border-gray-300 rounded-md shadow-lg" aria-labelledby="dropdown-menu" id="dropdown-menu-items">
+        <ul class="py-1">
+          <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">TA Applicant</a></li>
+          <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">Department Staff</a></li>
+          <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">TA Committee Member</a></li>
+          <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">Instructor</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Submit button -->
+    <button id="submit-button" type="button" class="ml-4 px-4 py-2 text-sm font-medium text-white bg-red-600 border border-transparent rounded-md shadow-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-600">Go</button>
+  </div>
+
+  <div class="flex items-center justify-center h-screen">
+      <div class="text-center">
+          <img src="./src/faulogo.png" alt="FAU Logo" class="mx-auto" style="max-width: 800px; max-height: 800px;">
+      </div>
+  </div>
+    
+</body>
+</html>
